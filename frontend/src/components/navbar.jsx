@@ -26,8 +26,18 @@ return(
       <li><a>Sell Phone</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Profile</a>
+  <div className="navbar-end hidden lg:flex">
+    <ul className=" menu menu-horizontal px-2">
+      <li>
+        <details>
+          <summary className="btn">Profile</summary>
+          <ul className="bg-base-100 rounded-t-none p-2">
+            <li><a>Listing</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
   </div>
 </div>
 )
