@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SignIn() {
+export default function SignUP() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-base-100">
       
@@ -17,8 +17,14 @@ export default function SignIn() {
         <div className="w-1/2 p-10 flex flex-col justify-center">
 
           <h2 className="text-xl font-semibold mb-6">
-            Please Log In To Your Account
+            Please Enter Your Details
           </h2>
+
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="input input-bordered w-full mb-4"
+          />
 
           <input
             type="email"
@@ -32,20 +38,17 @@ export default function SignIn() {
             className="input input-bordered w-full mb-4"
           />
 
-          <div className="text-sm mb-6">
-            <label className="flex items-center gap-2">
-              <input type="checkbox" className="toggle toggle-sm" />
-              Remember Me
-            </label>
-
-            <a className="text-red-500 block w-full text-left pt-4">Forgot Password?</a>
-          </div>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            className="input input-bordered w-full mb-4"
+          />
 
           <div className="flex gap-4">
-            <button className="btn flex-1">Login</button>
+            <button className="btn flex-1">Sign Up</button>
           </div>
 
-          <a className="text-sm text-gray-500 block w-full text-center pt-4">Dont have an account? Sign Up</a>
+          <a className="text-sm text-gray-500 block w-full text-center pt-4">Already have an account? Log In</a>
 
 
         </div>
